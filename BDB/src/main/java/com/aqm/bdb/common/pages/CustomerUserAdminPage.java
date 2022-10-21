@@ -45,7 +45,7 @@ private static CustomerUserAdminPage custuseradmin;
 	By proceedButton =By.xpath("//button[@id='ums_groupSearchPage_proceed']");
 	By saveButton =By.xpath("//button[@id='ums_userManagement_createUserPage_basicDetails']");
 	By searchUserID =By.xpath("//input[@id='ums_userManagement_loginId']");
-		
+	By userCategoryDrop =By.xpath("//select[@name='userCategory']");	
 	
 	public void clickCustUserAdmin() {
 		driver.switchTo().frame("frame-1-4");
@@ -121,5 +121,8 @@ private static CustomerUserAdminPage custuseradmin;
 		clearAndSendKeys(searchUserID, name);
 	}
 	
+	public void selectUserCategorydrop(String user_catrgory) {
+        selectValueFromList(userCategoryDrop, user_catrgory);
+    }
 	
 }

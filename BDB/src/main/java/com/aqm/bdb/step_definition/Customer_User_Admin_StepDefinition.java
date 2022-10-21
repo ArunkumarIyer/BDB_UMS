@@ -91,5 +91,10 @@ public class Customer_User_Admin_StepDefinition {
 	public void enter_in_customer_user_management_login_id_text_field(String name) {
 		CustomerUserAdminPage.getcustuseradmin().searchUserID(name);
 	}
+	
+	@Then("Select {string} value in user management User Category DropDown")
+    public void select_value_in_user_category_drop(String user_catrgory) {
+        CustomerUserAdminPage.getcustuseradmin().selectUserCategorydrop(user_catrgory);
+    }
 
 }

@@ -25,6 +25,7 @@ import com.aqm.bdb.common.pages.CustomerAdministrationPage;
 import com.aqm.bdb.common.pages.CustomerMaintenancePage;
 import com.aqm.bdb.common.pages.CustomerUserAdminPage;
 import com.aqm.bdb.common.pages.DashboardPage;
+import com.aqm.bdb.common.pages.GrantTransactionLimit;
 import com.aqm.bdb.common.pages.LoginPage;
 import com.aqm.bdb.common.pages.Reset_Block_User_Page;
 import com.aqm.bdb.common.pages.UserLevelLimitPage;
@@ -104,6 +105,8 @@ public class CommonUtils {
 		PageFactory.initElements(driver, AuthorizationMatrix.getauthmatrix());
 		
 		PageFactory.initElements(driver, UserLevelLimitPage.getuserlevellimit());
+		
+		PageFactory.initElements(driver, GrantTransactionLimit.gettranlimit());
 
 	}
 	

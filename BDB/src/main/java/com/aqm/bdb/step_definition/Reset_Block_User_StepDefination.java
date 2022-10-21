@@ -42,8 +42,13 @@ public class Reset_Block_User_StepDefination {
 	}
 
 	@Then("Click on {string} Login ID Link in Customer User Management")
-	public void click_on_login_id_link_in_customer_user_management(String string) {
+	public void click_on_login_id_link_in_customer_user_management(String string) throws Exception {
 		Reset_Block_User_Page.getResetBlockUser().clickUserIDLink();
+	}
+	
+	@Then("Click on Block user Confirm Button")
+	public void click_on_block_user_confirm_button() {
+		Reset_Block_User_Page.getResetBlockUser().clickBlockUserConfirmButton();
 	}
 
 }

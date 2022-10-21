@@ -30,19 +30,22 @@ public class TestNgRunner {
         public static void runner1()  {
             try {
             	 TestDataMap testdata=new TestDataMap();
-                 Map<String,String> TestDataInMap=ExcelHandler.getTestDataInMap("D:\\BDBAutomation\\BDB\\TestData\\TestData.xlsx", "Sheet1");
+                 Map<String,String> TestDataInMap=ExcelHandler.getTestDataInMap("D:\\Users\\Temp\\git\\BDB_UMS\\BDB\\TestData\\TestData.xlsx", "Sheet1");
                  testdata.setTestDataInMap(TestDataInMap);
                  Map<String,String>test=testdata.getTestDataInMap();
                 
                 Main.main(new String[] {
 
                 		"-g","com.aqm.bdb.step_definition",
-                		"D:\\BDBAutomation\\BDB\\src\\test\\java\\Features\\"+test.get("FeatureFileName"),
+                		"D:\\Users\\Temp\\git\\BDB_UMS\\BDB\\src\\test\\java\\Features\\"+test.get("FeatureFileName"),
                 		"--plugin", "pretty", 
                 		"--plugin", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                 		"--plugin", "json:target/cucumber-report/cucumber.json",
-                		"-m",
-                		"-d"
+                		"-m"
+                		
+                		
+              
+                		
                        
                         });
             } catch (Exception e) {

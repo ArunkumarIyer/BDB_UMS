@@ -115,5 +115,5 @@ Feature: Corporate without maker checker customer
 
 
     Examples:
-      | Username_m | Password_m    | Username_c  | Password_c    | Customer_name   | Description | Customer_type   | Cif_no | User_option   | Remark | User_Category | login_ID   | First_Name | Last_Name |Country_DropDown|Number_Country|Phone_Number| email_ID          |  
-      | BDBTELLER1 | ChangePwd@123 | BDBMANAGER1 | ChangePwd@123 | svs1255         | Automation  | Business        | 123208 | CUSTOMER USER | OK     | CUSTOMER USER | Corpo124   | Akshay     | Bhamare   | Bahrain        | 973          | 21345678   | corp0829@gmail.com|
+      | Username_m | Password_m    | Username_c  | Password_c    | Customer_name     | Description | Customer_type   | Cif_no | User_option   | Remark | User_Category | login_ID      | First_Name | Last_Name |Country_DropDown|Number_Country|Phone_Number| email_ID           |  
+      | TGHALI     | ChangePwd@123 | STAQI       | ChangePwd@123 | cop201022         | Automation  | Business        | 106309 | CUSTOMER USER | OK     | CUSTOMER USER | Corpo221020   | Akshay     | Bhamare   | Bahrain        | 973          | 21345678   | corp55465@gmail.com|

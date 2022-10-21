@@ -115,7 +115,7 @@ Feature: Individual customer
 
     Examples: 
       | Username_m | Password_m    | Username_c  | Password_c    | Customer_name      | Description | Customer_type | Cif_no | User_option | Remark | User_Category | login_ID    | First_Name | Last_Name |Country_DropDown|Number_Country|Phone_Number|email_ID        |  
-      | BDBTELLER1 | ChangePwd@123 | BDBMANAGER1 | ChangePwd@123 | pro1278            | Automation  | Retail        | 119696 | RETAIL USER | OK     | CUSTOMER USER | Autopro172  | Akshay     | Bhamare   | Bahrain        | 973          | 21345679   | pro78@gmail.com|
+      | TGHALI     | ChangePwd@123 | STAQI       | ChangePwd@123 | pro1280            | Automation  | Retail        | 109278 | RETAIL USER | OK     | CUSTOMER USER | Autopro174  | Akshay     | Bhamare   | Bahrain        | 973          | 21345679   | pro7899@gmail.com|
 
       
       

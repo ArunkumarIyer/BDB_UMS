@@ -71,6 +71,7 @@ public class AuthorizationPage extends BasePage {
 	
 	public void searchRef() throws Exception {
 		clearAndSendKeys(searchTextField, getReferenceNo());
+		Thread.sleep(10000);
 		click(searchButton);
 		Thread.sleep(10000);
 	}
