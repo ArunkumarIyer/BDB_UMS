@@ -48,11 +48,8 @@ public class TestNgRunner {
 					"--plugin", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 					"--plugin", "json:target/cucumber-report/cucumber.json",
 					"-m"
-
-
-
-
-
+					
+					
 			});
 
 

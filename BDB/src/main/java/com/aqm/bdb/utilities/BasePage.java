@@ -77,6 +77,7 @@ public void takeScreenShot() {
 			e.printStackTrace();
 		}
 		highlighter(element);
+		element.clear();
 		element.sendKeys(data);
 
 	}
