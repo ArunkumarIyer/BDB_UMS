@@ -1,6 +1,6 @@
 Feature: Corporate without maker checker customer
 
- Scenario Outline: Creating Corporate without maker checker customer
+  Scenario Outline: Creating Corporate without maker checker customer
     When Enter maker username "<Username_m>" and password "<Password_m>"
     And Click on login
     Then Click on plus
@@ -38,7 +38,7 @@ Feature: Corporate without maker checker customer
     And click on Resume button
     Then click on Release Button
     And Handle the pop-up box
-     #Grant Modules Tab
+    #Grant Modules Tab
     Then Click on Grant Modules Tab
     And Click on Digital option
     And Click on Move Right Button
@@ -49,7 +49,6 @@ Feature: Corporate without maker checker customer
     And select USER option "<User_option>" and added to right side
     And Click on single move right button
     And Click on Grant Role Button
-  
     #if pool page is not appear then handle this pop up
     #If pool page is appear -------
     Then click on Pool radio button and enter remark "<Remark>"
@@ -68,10 +67,7 @@ Feature: Corporate without maker checker customer
     And click on approve radio button and enter remark "<Remark>"
     And fetch pop-up box text click on ok button
     Then click on logout button
-
-
-
-  #Maker User creation process
+    #Maker User creation process
     When Enter maker username "<Username_m>" and password "<Password_m>"
     And Click on login
     Then Click on plus
@@ -92,14 +88,12 @@ Feature: Corporate without maker checker customer
     And Click on customer Radio Button
     And Click on Proceed Button
     And Click on Save Button
-    
     #Pool Queue Assignment
-    And  click on Pool radio button and enter remark "<Remark>"
+    And click on Pool radio button and enter remark "<Remark>"
     And click on submit button
     And fetch the reference number
     And Handle the pop-up box
     Then click on logout button
-    
     #login with Checker for approve
     When Enter checker username "<Username_c>" and password "<Password_c>"
     And Click on login
@@ -111,9 +105,8 @@ Feature: Corporate without maker checker customer
     And click on reference number link
     And click on approve radio button and enter remark "<Remark>"
     And fetch pop-up box text click on ok button
-    Then click on logout button   
+    Then click on logout button
 
-
-    Examples:
-      | Username_m | Password_m    | Username_c  | Password_c    | Customer_name     | Description | Customer_type   | Cif_no | User_option   | Remark | User_Category | login_ID      | First_Name | Last_Name |Country_DropDown|Number_Country|Phone_Number| email_ID           |  
-      | TGHALI     | ChangePwd@123 | STAQI       | ChangePwd@123 | cop201022         | Automation  | Business        | 106309 | CUSTOMER USER | OK     | CUSTOMER USER | Corpo221020   | Akshay     | Bhamare   | Bahrain        | 973          | 21345678   | corp55465@gmail.com|
+    Examples: 
+      | Username_m | Password_m    | Username_c | Password_c    | Customer_name | Description | Customer_type | Cif_no | User_option   | Remark | User_Category | login_ID    | First_Name | Last_Name | Country_DropDown | Number_Country | Phone_Number | email_ID            |
+      | TGHALI     | ChangePwd@123 | STAQI      | ChangePwd@123 | cop201022     | Automation  | Business      | 106309 | CUSTOMER USER | OK     | CUSTOMER USER | Corpo221020 | Akshay     | Bhamare   | Bahrain          |            973 |     21345678 | corp55465@gmail.com |

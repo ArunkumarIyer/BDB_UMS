@@ -44,7 +44,7 @@ Scenario Outline:To verify whether business customer is able grant Transaction l
     
 Examples: 
 		|Username_m|   Password_m |User_Category|Checker_login_ID|        Customer_Reference             |Transaction_Dropdown|Curreny_Dropdown|Authorization_Dropdown|Upper_Limit|Per_Day_Limit|Future_Transaction|Remark| Username_c|Password_c   |                    
-		|  TGHALI  | ChangePwd@123|CUSTOMER USER|  cropc71239    |    M/S.AHMED MADAN ABDULLA MADAN      |    All Financial   |       BHD      |     Maker            |   1000    |     1000    |       1000       | okay |   STAQI   |ChangePwd@123|
+		|  TGHALI  | ChangePwd@123|CUSTOMER USER|  cropc71289    |    M/S.AHMED MADAN ABDULLA MADAN      |    All Financial   |       BHD      |     Maker            |   1000    |     1000    |       1000       | okay |   STAQI   |ChangePwd@123|
 		
 		
 		
